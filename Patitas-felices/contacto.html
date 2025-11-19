@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fundación Patitas Felices</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <h1>🐾 Patitas Felices</h1>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav__menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adopta.html">Adopta</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="#donaciones">Donaciones</a></li>
+                <li><a href="#voluntariado">Voluntariado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para responder tus preguntas y ayudarte en el proceso</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <!-- Contact Info -->
+                <div class="contact__info">
+                    <h2>Información de Contacto</h2>
+                    <div class="contact__item">
+                        <div class="contact__icon">📧</div>
+                        <div>
+                            <h3>Correo Electrónico</h3>
+                            <p>info@patitasfelices.org</p>
+                            <p>adopciones@patitasfelices.org</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">📱</div>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+57 300 123 4567</p>
+                            <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">📍</div>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Calle 45 #23-67</p>
+                            <p>Bucaramanga, Santander</p>
+                            <p>Colombia</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">🌐</div>
+                        <div>
+                            <h3>Redes Sociales</h3>
+                            <div class="social-links-vertical">
+                                <a href="#" class="social-link">Facebook: @PatitasFelices</a>
+                                <a href="#" class="social-link">Instagram: @patitas_felices</a>
+                                <a href="#" class="social-link">Twitter: @PatitasFelices</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form class="form">
+                        <div class="form__group">
+                            <label for="nombre" class="form__label">Nombre <span class="required">*</span></label>
+                            <input type="text" id="nombre" name="nombre" class="form__input" required placeholder="Tu nombre">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="apellidos" class="form__label">Apellidos <span class="required">*</span></label>
+                            <input type="text" id="apellidos" name="apellidos" class="form__input" required placeholder="Tus apellidos">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="ciudad" class="form__label">Ciudad <span class="required">*</span></label>
+                            <input type="text" id="ciudad" name="ciudad" class="form__input" required placeholder="Tu ciudad">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Correo Electrónico <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form__input" required placeholder="tu@email.com">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="telefono" class="form__label">Teléfono <span class="required">*</span></label>
+                            <input type="tel" id="telefono" name="telefono" class="form__input" required placeholder="+57 300 123 4567">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="tipo" class="form__label">Tipo de Consulta <span class="required">*</span></label>
+                            <select id="tipo" name="tipo" class="form__select" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="adopcion">Adopción</option>
+                                <option value="donacion">Donación</option>
+                                <option value="voluntariado">Voluntariado</option>
+                                <option value="informacion">Información General</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="mensaje" class="form__label">Mensaje <span class="required">*</span></label>
+                            <textarea id="mensaje" name="mensaje" class="form__textarea" required placeholder="Cuéntanos cómo podemos ayudarte..." rows="5"></textarea>
+                        </div>
+
+                        <div class="form__note">
+                            <p><span class="required">*</span> Campos obligatorios</p>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--large">Enviar Mensaje</button>
+                    </form>
+
+                    <!-- Ejemplo de estados de validación (mostrados con clases) -->
+                    <div class="form-states-example" style="margin-top: 2rem; padding: 1rem; border: 1px dashed #ccc; border-radius: 8px;">
+                        <h3 style="font-size: 1rem; margin-bottom: 1rem;">Ejemplo de Estados de Validación:</h3>
+                        
+                        <div class="form__group">
+                            <label class="form__label">Campo Válido</label>
+                            <input type="text" class="form__input valid" value="Ejemplo válido" readonly>
+                            <span class="form__message success">✓ Campo correcto</span>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label">Campo con Error</label>
+                            <input type="email" class="form__input error" value="correo-invalido" readonly>
+                            <span class="form__message error">✗ Por favor ingresa un correo válido</span>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label">Campo Vacío Requerido</label>
+                            <input type="text" class="form__input error" placeholder="Este campo es obligatorio" readonly>
+                            <span class="form__message error">✗ Este campo es obligatorio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq__grid">
+                <div class="faq__item">
+                    <h3>¿Cuál es el proceso de adopción?</h3>
+                    <p>El proceso incluye: llenar el formulario, entrevista, visita domiciliaria, período de adaptación y seguimiento post-adopción.</p>
+                </div>
+                <div class="faq__item">
+                    <h3>¿Cuánto cuesta adoptar?</h3>
+                    <p>La adopción tiene un costo de recuperación de $150.000 que cubre vacunas, esterilización y cuidados médicos básicos.</p>
+                </div>
+                <div class="faq__item">
+                    <h3>¿Puedo conocer al animal antes de adoptar?</h3>
+                    <p>¡Absolutamente! Agendamos visitas para que conozcas a tu futuro compañero y veas si hay conexión.</p>
+                </div>
+                <div class="faq__item">
+                    <h3>¿Hacen seguimiento post-adopción?</h3>
+                    <p>Sí, hacemos seguimiento durante el primer año para asegurar que la adaptación sea exitosa para ambos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>🐾 Patitas Felices</h3>
+                    <p>Rescatando vidas, creando familias</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@patitasfelices.org</p>
+                    <p>📱 +57 300 123 4567</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Fundación Patitas Felices. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ para los animales</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
