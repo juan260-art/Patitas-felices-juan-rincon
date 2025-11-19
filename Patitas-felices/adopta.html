@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta - Fundación Patitas Felices</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <h1>🐾 Patitas Felices</h1>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav__menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adopta.html" class="active">Adopta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#donaciones">Donaciones</a></li>
+                <li><a href="#voluntariado">Voluntariado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Animales en Adopción</h1>
+            <p>Cada uno de estos animales tiene una historia única y está esperando conocerte</p>
+        </div>
+    </section>
+
+    <!-- Animales Grid -->
+    <section class="animals">
+        <div class="container">
+            <div class="animals__grid">
+                <!-- Animal 1 -->
+                <div class="animal-card">
+                    <div class="animal-card__image">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600" alt="Max">
+                        <span class="animal-card__status available">Disponible</span>
+                    </div>
+                    <div class="animal-card__content">
+                        <h3>Max</h3>
+                        <div class="animal-card__info">
+                            <span>🐕 Perro</span>
+                            <span>📅 3 años</span>
+                            <span>📏 Grande</span>
+                        </div>
+                        <p>Labrador cariñoso y juguetón, ideal para familias activas</p>
+                        <a href="perfil.html" class="btn btn--primary">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <!-- Animal 2 -->
+                <div class="animal-card">
+                    <div class="animal-card__image">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600" alt="Luna">
+                        <span class="animal-card__status available">Disponible</span>
+                    </div>
+                    <div class="animal-card__content">
+                        <h3>Luna</h3>
+                        <div class="animal-card__info">
+                            <span>🐱 Gata</span>
+                            <span>📅 2 años</span>
+                            <span>📏 Mediana</span>
+                        </div>
+                        <p>Gata tranquila y mimosa, perfecta para apartamentos</p>
+                        <a href="perfil.html" class="btn btn--primary">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <!-- Animal 3 -->
+                <div class="animal-card">
+                    <div class="animal-card__image">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600" alt="Rocky">
+                        <span class="animal-card__status available">Disponible</span>
+                    </div>
+                    <div class="animal-card__content">
+                        <h3>Rocky</h3>
+                        <div class="animal-card__info">
+                            <span>🐕 Perro</span>
+                            <span>📅 5 años</span>
+                            <span>📏 Mediano</span>
+                        </div>
+                        <p>Mestizo leal y protector, excelente guardián del hogar</p>
+                        <a href="perfil.html" class="btn btn--primary">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <!-- Animal 4 -->
+                <div class="animal-card">
+                    <div class="animal-card__image">
+                        <img src="https://images.unsplash.com/photo-1573865526739-10c1dd7aa747?w=600" alt="Mimi">
+                        <span class="animal-card__status adopted">Adoptado</span>
+                    </div>
+                    <div class="animal-card__content">
+                        <h3>Mimi</h3>
+                        <div class="animal-card__info">
+                            <span>🐱 Gata</span>
+                            <span>📅 1 año</span>
+                            <span>📏 Pequeña</span>
+                        </div>
+                        <p>Gatita juguetona que encontró su hogar feliz</p>
+                        <a href="perfil.html" class="btn btn--secondary disabled">Adoptado</a>
+                    </div>
+                </div>
+
+                <!-- Animal 5 -->
+                <div class="animal-card">
+                    <div class="animal-card__image">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600" alt="Toby">
+                        <span class="animal-card__status available">Disponible</span>
+                    </div>
+                    <div class="animal-card__content">
+                        <h3>Toby</h3>
+                        <div class="animal-card__info">
+                            <span>🐕 Perro</span>
+                            <span>📅 4 años</span>
+                            <span>📏 Pequeño</span>
+                        </div>
+                        <p>Terrier energético, perfecto para casas con jardín</p>
+                        <a href="perfil.html" class="btn btn--primary">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <!-- Animal 6 -->
+                <div class="animal-card">
+                    <div class="animal-card__image">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600" alt="Simba">
+                        <span class="animal-card__status available">Disponible</span>
+                    </div>
+                    <div class="animal-card__content">
+                        <h3>Simba</h3>
+                        <div class="animal-card__info">
+                            <span>🐱 Gato</span>
+                            <span>📅 3 años</span>
+                            <span>📏 Grande</span>
+                        </div>
+                        <p>Gato majestuoso y cariñoso, ama las siestas al sol</p>
+                        <a href="perfil.html" class="btn btn--primary">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <!-- Animal 7 -->
+                <div class="animal-card">
+                    <div class="animal-card__image">
+                        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=600" alt="Bella">
+                        <span class="animal-card__status available">Disponible</span>
+                    </div>
+                    <div class="animal-card__content">
+                        <h3>Bella</h3>
+                        <div class="animal-card__info">
+                            <span>🐕 Perra</span>
+                            <span>📅 2 años</span>
+                            <span>📏 Mediana</span>
+                        </div>
+                        <p>Perra dulce y cariñosa, se lleva bien con niños</p>
+                        <a href="perfil.html" class="btn btn--primary">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <!-- Animal 8 -->
+                <div class="animal-card">
+                    <div class="animal-card__image">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600" alt="Coco">
+                        <span class="animal-card__status adopted">Adoptado</span>
+                    </div>
+                    <div class="animal-card__content">
+                        <h3>Coco</h3>
+                        <div class="animal-card__info">
+                            <span>🐱 Gato</span>
+                            <span>📅 6 meses</span>
+                            <span>📏 Pequeño</span>
+                        </div>
+                        <p>Gatito travieso que ya tiene una familia amorosa</p>
+                        <a href="perfil.html" class="btn btn--secondary disabled">Adoptado</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para Adoptar?</h2>
+            <p>Contáctanos para iniciar el proceso de adopción y conocer a tu nuevo compañero</p>
+            <a href="contacto.html" class="btn btn--primary">Solicitar Adopción</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>🐾 Patitas Felices</h3>
+                    <p>Rescatando vidas, creando familias</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@patitasfelices.org</p>
+                    <p>📱 +57 300 123 4567</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Fundación Patitas Felices. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ para los animales</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
