@@ -14,7 +14,7 @@
                 <h1>🐾 Patitas Felices</h1>
             </div>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
+            <label for="menu-toggle" class="menu-icon" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -140,20 +140,20 @@
                         <h3 style="font-size: 1rem; margin-bottom: 1rem;">Ejemplo de Estados de Validación:</h3>
                         
                         <div class="form__group">
-                            <label class="form__label">Campo Válido</label>
-                            <input type="text" class="form__input valid" value="Ejemplo válido" readonly>
+                            <label for="campo-valido" class="form__label">Campo Válido</label>
+                            <input type="text" id="campo-valido" class="form__input valid" value="Ejemplo válido" readonly>
                             <span class="form__message success">✓ Campo correcto</span>
                         </div>
 
                         <div class="form__group">
-                            <label class="form__label">Campo con Error</label>
-                            <input type="email" class="form__input error" value="correo-invalido" readonly>
+                            <label for="campo-error" class="form__label">Campo con Error</label>
+                            <input type="email" id="campo-error" class="form__input error" value="correo-invalido" readonly>
                             <span class="form__message error">✗ Por favor ingresa un correo válido</span>
                         </div>
 
                         <div class="form__group">
-                            <label class="form__label">Campo Vacío Requerido</label>
-                            <input type="text" class="form__input error" placeholder="Este campo es obligatorio" readonly>
+                            <label for="campo-vacio" class="form__label">Campo Vacío Requerido</label>
+                            <input type="text" id="campo-vacio" class="form__input error" placeholder="Este campo es obligatorio" readonly>
                             <span class="form__message error">✗ Este campo es obligatorio</span>
                         </div>
                     </div>
